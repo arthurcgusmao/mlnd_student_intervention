@@ -1,0 +1,32 @@
+* yep
+** Decision Trees
+
+** Ensemble Methods (Bagging, AdaBoost, Random Forest, Gradient Boosting)
+
+** Support Vector Machines (SVM)
+
+
+* nope
+** K-Nearest Neighbors (KNeighbors)
+Our data is very sparse given the number of dimensions (the curse of dimensionality): we have 30
+features in our dataset and only around 400 data points.
+** Gaussian Naive Bayes (GaussianNB)
+In my understanding, our data may have strong interrelationships between features, which Naive
+Bayes won't model because of the naive assumption.
+
+For example, students who live distant from school AND have little free time may be more prone
+to fail, while the ones who only live distant OR only have little free time may have no problems
+at all (just a supposition). In this example Naive Bayes would model these two features as
+having the same importance for the student's failure, and not the fact that the conjunction of
+both is the actual reason.
+
+Even though Naive Bayes may still performe well without this interrelationship modeling, other
+learners may perform even better.
+** Stochastic Gradient Descent (SGDC)
+Gradient descent alone requires that the data be linear separable, which may not be the
+case. Therefore, if the actual function we are trying to predict happens to be nonlinear, we'll
+end up with very low accuracy.
+** Logistic Regression
+Logistic regression can reach smaller error rates with more consistency than Gradient Descent.
+However, the accuracy will still remain low compared to other models if data is nonlinear.
+Since we don't know how our behaves at this moment, I'll pass on Logistic Regression either.
